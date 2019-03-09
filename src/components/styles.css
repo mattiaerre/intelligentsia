@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+/* http://getbem.com/naming/ */
+
+body {
+  --color-charcoal-grey: #2d343a;
+  --color-putty: #bcb38e;
+  --color-seafoam-blue: #74b3ce;
+  --color-white: white;
+  --family-sans-serif: 'Source Sans Pro', sans-serif;
+  --family-serif: 'Playfair Display', serif;
+  background-color: var(--color-charcoal-grey);
+  color: var(--color-white);
+}
+
+h1,
+h2 {
+  font-family: var(--family-serif);
+}
+
+h1 {
+  color: var(--color-white);
+  font-size: 60px;
+  font-weight: 900;
+  margin: 8px auto;
+  text-align: center;
+}
+
+p {
+  font-family: var(--family-sans-serif);
+}
+
+.p__border-bottom {
+  border-bottom: 1px solid var(--color-seafoam-blue);
+}
+
+.p__font-24 {
+  font-size: 24px;
+}
+
+.p__putty {
+  color: var(--color-putty);
+  margin: 8px auto;
+  max-width: 500px;
+  padding: 8px;
+  text-align: center;
+}
+
+.p__serif {
+  font-family: var(--family-serif);
+}

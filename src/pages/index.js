@@ -1,21 +1,25 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'gatsby';
-
+// import { Link } from 'gatsby';
 import Layout from '../components/layout';
-import Image from '../components/image';
-import SEO from '../components/seo';
+import withCopy from '../components/withCopy';
+// import Image from '../components/image';
+// import SEO from '../components/seo';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-);
+function IndexPage({ copy }) {
+  return (
+    <Layout>
+      <h1>{copy['Accurate Affordable Transription']}</h1>
+      <p className="p__border-bottom p__font-24 p__putty p__serif">
+        {copy['There are some']}
+      </p>
+      <p>{copy['We can use']}</p>
+    </Layout>
+  );
+}
 
-export default IndexPage;
+IndexPage.propTypes = {
+  copy: PropTypes.object.isRequired
+};
+
+export default withCopy(IndexPage);
