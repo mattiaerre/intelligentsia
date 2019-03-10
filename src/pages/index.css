@@ -1,1 +1,26 @@
-/* TODO */
+.p--border-bottom {
+  border-bottom: 3px solid var(--color-seafoam-blue);
+}
+
+.p--font-24 {
+  font-size: 24px;
+}
+
+.p--max-width-490 {
+  max-width: 490px;
+}
+
+.p--max-width-570 {
+  max-width: 570px;
+}
+
+.p--putty {
+  color: var(--color-putty);
+  margin: 8px auto;
+  padding: 8px 8px 24px 8px;
+  text-align: center;
+}
+
+.p--serif {
+  font-family: var(--family-serif);
+}

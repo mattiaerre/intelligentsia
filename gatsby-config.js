@@ -1,3 +1,4 @@
+const copy = require('./src/components/withCopy/copy.json');
 const { name, version } = require('./package.json');
 
 const config = {
@@ -5,7 +6,7 @@ const config = {
     author: '@mattiaerre',
     description: 'TODO-description',
     name,
-    title: 'TODO-title',
+    title: `${copy['Moving On Productions']} v${version}`,
     version
   },
   plugins: [

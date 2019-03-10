@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--max-width {
+  margin: auto;
+  max-width: 1344px;
+}
+
+.Link__nav-item {
+  color: var(--color-light-grey);
+  font-size: 17px;
+  font-weight: 900;
+  margin-left: 46px;
+  text-decoration: none;
+}
+
+.Link__nav-item--active {
+  color: var(--color-putty);
+}
+
+.ul__nav {
+  color: white;
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+  padding: 0;
+}

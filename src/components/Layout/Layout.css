@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
 
 /* http://getbem.com/naming/ */
+/* block */
+/* block__elem */
+/* block--mod */
 
 body {
   --color-charcoal-grey: #2d343a;
@@ -15,13 +18,12 @@ body {
   color: var(--color-white);
 }
 
-.div__max-width {
+.div--max-width {
   margin: auto;
   max-width: 1344px;
 }
 
-h1,
-h2 {
+h1 {
   font-family: var(--family-serif);
 }
 
@@ -33,45 +35,14 @@ h1 {
   text-align: center;
 }
 
+/* this is not very BEM */
 header > a > svg {
   width: 227px;
   height: 64px;
   object-fit: contain;
 }
 
-.header__max-width {
-  margin: auto;
-  max-width: 1344px;
-}
-
 p {
   font-family: var(--family-sans-serif);
   font-weight: normal;
-}
-
-.p__border-bottom {
-  border-bottom: 3px solid var(--color-seafoam-blue);
-}
-
-.p__font-24 {
-  font-size: 24px;
-}
-
-.p__max-width-490 {
-  max-width: 490px;
-}
-
-.p__max-width-570 {
-  max-width: 570px;
-}
-
-.p__putty {
-  color: var(--color-putty);
-  margin: 8px auto;
-  padding: 8px 8px 24px 8px;
-  text-align: center;
-}
-
-.p__serif {
-  font-family: var(--family-serif);
 }

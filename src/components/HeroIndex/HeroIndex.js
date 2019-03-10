@@ -1,4 +1,4 @@
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, Link, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -28,12 +28,12 @@ function HeroIndex({ copy }) {
       }) => (
         <>
           <Img fluid={fluid} />
-          <h1 className="h1__centered">
+          <h1 className="h1--centered">
             {copy['Accurate Affordable Transription']}
           </h1>
-          <a className="button--order" href="/order">
-            ORDER
-          </a>
+          <Link className="Link__order" to="/order">
+            {copy.Order}
+          </Link>
         </>
       )}
     />

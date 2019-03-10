@@ -4,17 +4,17 @@ import Layout from '../components/Layout/Layout';
 import withCopy from '../components/withCopy/withCopy';
 import SEO from '../components/SEO';
 
-function OrderPage({ copy }) {
+function ContactPage({ copy }) {
   return (
     <Layout>
-      <SEO title={copy.Order} />
-      <h1>{copy["Let's Get Started"]}</h1>
+      <SEO title={copy.Contact} />
+      <h1>{copy['Keep In Touch']}</h1>
     </Layout>
   );
 }
 
-OrderPage.propTypes = {
+ContactPage.propTypes = {
   copy: PropTypes.object.isRequired
 };
 
-export default withCopy(OrderPage);
+export default withCopy(ContactPage);
