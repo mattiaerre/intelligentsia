@@ -8,7 +8,7 @@
   max-width: 1344px;
 }
 
-.Link__nav-item {
+.Link__header-nav-item {
   color: var(--color-light-grey);
   font-size: 17px;
   font-weight: 900;
@@ -16,11 +16,17 @@
   text-decoration: none;
 }
 
-.Link__nav-item--active {
+.Link__header-nav-item--active {
   color: var(--color-putty);
 }
 
-.ul__nav {
+.Logo {
+  height: 64px;
+  object-fit: contain;
+  width: 227px;
+}
+
+.ul__header-nav {
   color: white;
   display: flex;
   list-style: none;

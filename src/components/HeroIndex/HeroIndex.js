@@ -1,4 +1,4 @@
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -18,25 +18,22 @@ const query = graphql`
 `;
 
 function HeroIndex({ copy }) {
+  const {
+    placeholderImage: {
+      childImageSharp: { fluid }
+    }
+  } = useStaticQuery(query);
+
   return (
-    <StaticQuery
-      query={query}
-      render={({
-        placeholderImage: {
-          childImageSharp: { fluid }
-        }
-      }) => (
-        <>
-          <Img fluid={fluid} />
-          <h1 className="h1--centered">
-            {copy['Accurate Affordable Transription']}
-          </h1>
-          <Link className="Link__order" to="/order">
-            {copy.Order}
-          </Link>
-        </>
-      )}
-    />
+    <>
+      <Img fluid={fluid} />
+      <h1 className="h1--centered">
+        {copy['Accurate Affordable Transription']}
+      </h1>
+      <Link className="Link__order" to="/order">
+        {copy.Order}
+      </Link>
+    </>
   );
 }
 

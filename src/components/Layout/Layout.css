@@ -8,6 +8,7 @@
 
 body {
   --color-charcoal-grey: #2d343a;
+  --color-dark-taupe: #726442;
   --color-putty: #bcb38e;
   --color-seafoam-blue: #74b3ce;
   --color-light-grey: #f2efe6;
@@ -33,13 +34,6 @@ h1 {
   font-weight: 900;
   margin: 8px auto;
   text-align: center;
-}
-
-/* this is not very BEM */
-header > a > svg {
-  width: 227px;
-  height: 64px;
-  object-fit: contain;
 }
 
 p {

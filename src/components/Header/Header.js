@@ -6,7 +6,7 @@ import withCopy from '../withCopy/withCopy';
 import './Header.css';
 
 function Header({ copy }) {
-  const links = [
+  const nav = [
     {
       label: copy.About,
       to: '/about'
@@ -28,14 +28,14 @@ function Header({ copy }) {
   return (
     <header className="header header--max-width">
       <Link to="/">
-        <Logo />
+        <Logo className="Logo" />
       </Link>
-      <ul className="ul__nav">
-        {links.map(({ label, to }) => (
+      <ul className="ul__header-nav">
+        {nav.map(({ label, to }) => (
           <li key={to}>
             <Link
-              activeClassName="Link__nav-item--active"
-              className="Link__nav-item"
+              activeClassName="Link__header-nav-item--active"
+              className="Link__header-nav-item"
               to={to}
             >
               {label}
