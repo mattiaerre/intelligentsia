@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
 
 /* http://getbem.com/naming/ */
 
@@ -7,6 +7,7 @@ body {
   --color-charcoal-grey: #2d343a;
   --color-putty: #bcb38e;
   --color-seafoam-blue: #74b3ce;
+  --color-light-grey: #f2efe6;
   --color-white: white;
   --family-sans-serif: 'Source Sans Pro', sans-serif;
   --family-serif: 'Playfair Display', serif;
@@ -16,7 +17,7 @@ body {
 
 .div__max-width {
   margin: auto;
-  max-width: 1000px;
+  max-width: 1344px;
 }
 
 h1,
@@ -32,8 +33,15 @@ h1 {
   text-align: center;
 }
 
-.h1__max-width {
-  max-width: 600px;
+header > a > svg {
+  width: 227px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.header__max-width {
+  margin: auto;
+  max-width: 1344px;
 }
 
 p {

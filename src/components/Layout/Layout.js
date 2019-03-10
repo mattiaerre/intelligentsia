@@ -3,35 +3,43 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import withCopy from '../withCopy/withCopy';
 import './Layout.css';
+import Logo from '../../images/logo-dark.svg';
 
-function Layout({ children }) {
+const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        name
+        version
+      }
+    }
+  }
+`;
+
+function Layout({ children, copy }) {
   return (
     <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              name
-              version
-            }
-          }
-        }
-      `}
-      render={withCopy(({ copy, site: { siteMetadata } }) => (
+      query={query}
+      render={({ site: { siteMetadata } }) => (
         <>
-          <header>{copy['Moving On Productions']}</header>
+          <header className="header__max-width">
+            <a href="/">
+              <Logo />
+            </a>
+          </header>
           <div className="div__max-width">
             <main>{children}</main>
             <footer>{`${siteMetadata.name} v${siteMetadata.version}`}</footer>
           </div>
         </>
-      ))}
+      )}
     />
   );
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  copy: PropTypes.object.isRequired
 };
 
-export default Layout;
+export default withCopy(Layout);

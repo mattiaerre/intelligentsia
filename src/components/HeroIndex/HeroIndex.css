@@ -1,0 +1,28 @@
+.button--order {
+  background-color: rgba(188, 179, 142, 0.7);
+  border: solid 1px var(--color-light-grey);
+  box-shadow: 0 10px 25px 0 rgba(116, 179, 206, 0.2);
+  color: var(--color-charcoal-grey);
+  display: inline-block;
+  font-family: var(--family-sans-serif);
+  font-size: 22px;
+  font-weight: bold;
+  height: 60px;
+  left: 50%;
+  letter-spacing: 2px;
+  line-height: 60px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 500px;
+  transform: translate(-50%, -50%);
+  width: 180px;
+}
+
+.h1__centered {
+  left: 50%;
+  max-width: 600px;
+  position: absolute;
+  top: 320px;
+  transform: translate(-50%, -50%);
+}
