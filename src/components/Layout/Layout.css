@@ -14,6 +14,11 @@ body {
   color: var(--color-white);
 }
 
+.div__max-width {
+  margin: auto;
+  max-width: 1000px;
+}
+
 h1,
 h2 {
   font-family: var(--family-serif);
@@ -27,23 +32,35 @@ h1 {
   text-align: center;
 }
 
+.h1__max-width {
+  max-width: 600px;
+}
+
 p {
   font-family: var(--family-sans-serif);
+  font-weight: normal;
 }
 
 .p__border-bottom {
-  border-bottom: 1px solid var(--color-seafoam-blue);
+  border-bottom: 3px solid var(--color-seafoam-blue);
 }
 
 .p__font-24 {
   font-size: 24px;
 }
 
+.p__max-width-490 {
+  max-width: 490px;
+}
+
+.p__max-width-570 {
+  max-width: 570px;
+}
+
 .p__putty {
   color: var(--color-putty);
   margin: 8px auto;
-  max-width: 500px;
-  padding: 8px;
+  padding: 8px 8px 24px 8px;
   text-align: center;
 }
 

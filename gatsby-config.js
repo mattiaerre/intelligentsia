@@ -1,8 +1,12 @@
+const { name, version } = require('./package.json');
+
 const config = {
   siteMetadata: {
     author: '@mattiaerre',
     description: 'TODO-description',
-    title: 'TODO-title'
+    name,
+    title: 'TODO-title',
+    version
   },
   plugins: [
     'gatsby-plugin-react-helmet',

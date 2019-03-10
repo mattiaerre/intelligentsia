@@ -2,7 +2,7 @@
   "name": "intelligentsia",
   "private": true,
   "description": "TODO",
-  "version": "2.0.0",
+  "version": "2.0.0-beta.1",
   "author": "Mattia Richetto <mattia.richetto@gmail.com>",
   "dependencies": {
     "gatsby": "^2.1.27",

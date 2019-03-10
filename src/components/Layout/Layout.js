@@ -1,9 +1,8 @@
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-// import Header from './header';
-// import './layout.css';
-import './styles.css';
+import withCopy from '../withCopy/withCopy';
+import './Layout.css';
 
 function Layout({ children }) {
   return (
@@ -12,20 +11,21 @@ function Layout({ children }) {
         query SiteTitleQuery {
           site {
             siteMetadata {
-              title
+              name
+              version
             }
           }
         }
       `}
-      render={data => (
+      render={withCopy(({ copy, site: { siteMetadata } }) => (
         <>
-          <header>{data.site.siteMetadata.title}</header>
-          <div>
+          <header>{copy['Moving On Productions']}</header>
+          <div className="div__max-width">
             <main>{children}</main>
-            <footer>TODO</footer>
+            <footer>{`${siteMetadata.name} v${siteMetadata.version}`}</footer>
           </div>
         </>
-      )}
+      ))}
     />
   );
 }
