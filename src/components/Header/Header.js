@@ -26,16 +26,16 @@ function Header({ copy }) {
   ];
 
   return (
-    <header className="header header--max-width">
+    <header className="header">
       <Link to="/">
-        <Logo className="Logo" />
+        <Logo className="header__Logo" />
       </Link>
-      <ul className="ul__header-nav">
+      <ul className="header__ul">
         {nav.map(({ label, to }) => (
           <li key={to}>
             <Link
-              activeClassName="Link__header-nav-item--active"
-              className="Link__header-nav-item"
+              activeClassName="header__Link--active"
+              className="header__Link"
               to={to}
             >
               {label}

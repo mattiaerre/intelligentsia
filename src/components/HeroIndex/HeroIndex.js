@@ -27,10 +27,10 @@ function HeroIndex({ copy }) {
   return (
     <>
       <Img fluid={fluid} />
-      <h1 className="h1--centered">
+      <h1 className="HeroIndex__h1">
         {copy['Accurate Affordable Transription']}
       </h1>
-      <Link className="Link__order" to="/order">
+      <Link className="HeroIndex__Link" to="/order">
         {copy.Order}
       </Link>
     </>

@@ -1,26 +1,18 @@
-.p--border-bottom {
-  border-bottom: 3px solid var(--color-seafoam-blue);
-}
-
-.p--font-24 {
-  font-size: 24px;
-}
-
-.p--max-width-490 {
-  max-width: 490px;
-}
-
-.p--max-width-570 {
+.IndexPage__p-description {
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 58px 0;
   max-width: 570px;
 }
 
-.p--putty {
+.IndexPage__p-slogan {
+  border-bottom: 3px solid var(--color-seafoam-blue);
   color: var(--color-putty);
+  font-family: var(--family-serif);
+  font-size: 24px;
+  font-weight: 300;
   margin: 8px auto;
+  max-width: 490px;
   padding: 8px 8px 24px 8px;
   text-align: center;
-}
-
-.p--serif {
-  font-family: var(--family-serif);
 }

@@ -1,14 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-}
-
-.header--max-width {
   margin: auto;
   max-width: 1344px;
 }
 
-.Link__header-nav-item {
+.header__Link {
   color: var(--color-light-grey);
   font-size: 17px;
   font-weight: 900;
@@ -16,17 +13,17 @@
   text-decoration: none;
 }
 
-.Link__header-nav-item--active {
+.header__Link--active {
   color: var(--color-putty);
 }
 
-.Logo {
+.header__Logo {
   height: 64px;
   object-fit: contain;
   width: 227px;
 }
 
-.ul__header-nav {
+.header__ul {
   color: white;
   display: flex;
   list-style: none;

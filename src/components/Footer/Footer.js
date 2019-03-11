@@ -27,15 +27,15 @@ function Footer({ copy }) {
 
   const social = [
     {
-      className: 'i__social-item fab fa-linkedin-in',
+      className: 'footer__i-social fab fa-linkedin-in',
       href: 'https://www.linkedin.com/company/moving-on-productions-llc'
     },
     {
-      className: 'i__social-item fab fa-twitter',
+      className: 'footer__i-social fab fa-twitter',
       href: 'https://twitter.com/MovingOnProd'
     },
     {
-      className: 'i__social-item fab fa-facebook-f',
+      className: 'footer__i-social fab fa-facebook-f',
       href: 'https://www.facebook.com/movingontranscription'
     }
   ];
@@ -48,19 +48,19 @@ function Footer({ copy }) {
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossOrigin="anonymous"
       />
-      <Logo className="Logo--light" />
-      <ul className="ul__footer-nav">
+      <Logo className="footer__Logo--light" />
+      <ul className="footer__ul-nav">
         {nav.map(({ label, to }) => (
           <li key={to}>
-            <Link className="Link__footer-nav-item" to={to}>
+            <Link className="footer__Link" to={to}>
               {label}
             </Link>
           </li>
         ))}
       </ul>
-      <ul className="ul__social">
+      <ul className="footer__ul-social">
         {social.map(({ className, href }) => (
-          <li className="li__social-item">
+          <li className="footer__li-social">
             <a href={href} rel="noopener noreferrer" target="_blank">
               <i className={className} />
             </a>

@@ -11,10 +11,8 @@ function IndexPage({ copy }) {
     <Layout>
       <SEO title={copy.Home} />
       <HeroIndex />
-      <p className="p--border-bottom p--font-24 p--max-width-490 p--putty p--serif">
-        {copy['There are some']}
-      </p>
-      <p className="p--max-width-570">{copy['We can use']}</p>
+      <p className="IndexPage__p-slogan">{copy['There are some']}</p>
+      <p className="IndexPage__p-description">{copy['We can use']}</p>
     </Layout>
   );
 }
@@ -24,3 +22,5 @@ IndexPage.propTypes = {
 };
 
 export default withCopy(IndexPage);
+
+// /Users/mrichetto/projects/intelligentsia/src/images/brooke-campbell-44085-unsplash.jpg

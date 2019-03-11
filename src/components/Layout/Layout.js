@@ -8,7 +8,7 @@ function Layout({ children }) {
   return (
     <>
       <Header />
-      <div className="div--max-width">
+      <div className="Layour__div">
         <main>{children}</main>
         <Footer />
       </div>
